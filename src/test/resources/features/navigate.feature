@@ -1,3 +1,4 @@
+
 Feature: HomePage
   @navigate
   Scenario: Verify HomePage title is displayed

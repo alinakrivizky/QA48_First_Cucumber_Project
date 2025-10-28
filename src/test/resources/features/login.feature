@@ -1,3 +1,4 @@
+
 Feature: Login
   @validData
   Scenario: Login with valid data
@@ -6,4 +7,5 @@ Feature: Login
     And User clicks on login link
     And User enters valid data
     And User clicks on <Yalla> button
-    Then User verifies Success message is displayed
+    And User verifies Success message is displayed
+    Then User closes Success message

@@ -20,4 +20,10 @@ WebElement logInLink;
         click(logInLink);
         return new LoginPage(driver);
     }
+@FindBy(xpath="//a[.='Let car work']")
+WebElement letCarWorkLink;
+    public LetCarWorkPage clickOnLetCarWorkLink() {
+        click(letCarWorkLink);
+        return new LetCarWorkPage(driver);
+    }
 }

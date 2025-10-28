@@ -29,4 +29,10 @@ WebElement Successmessage;
         assert Successmessage.getText().contains(message);
         return this;
     }
+@FindBy(css = "a[class='btn btn--primary']")
+WebElement okButton;
+    public HomePage clickOnOkButton() {
+        click(okButton);
+        return new HomePage(driver);
+    }
 }

@@ -20,8 +20,12 @@ public class LoginSteps {
     public void click_on_button() {
         new LoginPage(driver).clickOnYallaButton();
     }
-    @Then("User verifies Success message is displayed")
+    @And("User verifies Success message is displayed")
     public void verify_message_s_displayed() {
         new LoginPage(driver).isSuccessTextPresent("You are logged in success");
+    }
+    @Then("User closes Success message")
+    public void verify_message_closed() {
+        new LoginPage(driver).clickOnOkButton();
     }
 }
